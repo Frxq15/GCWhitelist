@@ -1,0 +1,21 @@
+package net.guildcraft.whitelist;
+
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerLoginEvent;
+
+
+public class Events implements Listener{
+    @EventHandler
+    public void onLoginEvent(PlayerLoginEvent event) {
+        Player player = event.getPlayer();
+        if (!player.hasPermission("gcwhitelist.whitelist.bypass") && (Lists.getLists().whitelist) && (!Lists.getLists().players.contains(player.getName()))) {
+            //event.setKickMessage(Main.getInstance().getConfig().getString("whitelist-kick-message"));
+            event.setResult(PlayerLoginEvent.Result.KICK_OTHER);
+            event.disallow(PlayerLoginEvent.Result.KICK_OTHER, (ChatColor.translateAlternateColorCodes('&', (Main.getInstance().getConfig().getString("whitelist-kick-message").replace("<nl>", "\n")))));
+        }
+    }
+}
+
