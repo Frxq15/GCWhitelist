@@ -1,0 +1,10 @@
+name: GCWhitelist
+version: 1.0
+authors: [Frxq15]
+main: net.guildcraft.whitelist.Main
+description: GuildCraft whitelist plugin
+
+commands:
+    whitelist:
+        description: Base Command
+        usage: /<command> <action>
