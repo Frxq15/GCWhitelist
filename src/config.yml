@@ -1,0 +1,29 @@
+whitelist-status: false
+
+no-permission: '&f[&bGCWhitelist&f] &7You dont have permission to perform this command.'
+whitelist-reloaded: '&f[&bGCWhitelist&f] &7You reloaded the whitelist files successfully.'
+already-whitelisted: '&f[&bGCWhitelist&f] &7The player &b%player% &7is already whitelisted.'
+player-whitelisted: '&f[&bGCWhitelist&f] &7You have added &b%player% &7to the server whitelist.'
+not-whitelisted: '&f[&bGCWhitelist&f] &7The player &b%player% &7is not whitelisted.'
+player-unwhitelisted: '&f[&bGCWhitelist&f] &7You have removed &b%player% &7to the server whitelist.'
+target-not-found: '&f[&bGCWhitelist&f] &7The player you specified could not be found.'
+whitelist-cleared: '&f[&bGCWhitelist&f] &7You have successfully cleared the whitelist.'
+whitelist-amount: '&7There are &b%whitelisted% &7out of &b%size% &7players whitelisted.'
+whitelist-list: '&b&l→ &7%players%'
+whitelist-list-none: '&b&l→ &7There are no players whitelisted'
+#This message is broadcasted to everyone with gcwhitelist.whitelist when the whitelist is enabled
+
+whitelist-enabled: '&f[&bGCWhitelist&f] &7You have &aenabled &7the whitelist.'
+enabled-by: '&f[&bGCWhitelist&f] &7The whitelist was &aenabled &7by &b%player%'
+already-enabled: '&f[&bGCWhitelist&f] &7The whitelist is already &aenabled&7.'
+#This message is broadcasted to everyone with gcwhitelist.whitelist when the whitelist is disabled
+
+whitelist-disabled: '&f[&bGCWhitelist&f] &7You have &cdisabled &7the whitelist.'
+disabled-by: '&f[&bGCWhitelist&f] &7The whitelist was &cdisabled &7by &b%player%'
+already-disabled: '&f[&bGCWhitelist&f] &7The whitelist is already &cdisabled&7.'
+
+#This message is sent as a kick result when a player tries to join when the whitelist is enabled
+#Players with the permission gcwhitelist.whitelist.bypass can automatically bypass the whitelist or of course anyone who is whitelisted
+
+#Use <nl> to generate a new line
+whitelist-kick-message: '&7You cannot connect to this server because the whitelist is currently enabled.<nl>&b&l→ &7Visit &bguildcraft.org &7for more information.'
