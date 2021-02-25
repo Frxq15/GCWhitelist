@@ -1,0 +1,22 @@
+package net.guildcraft.whitelist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Lists {
+	private static Lists lists;
+
+	public Lists() {
+	  lists = this;
+	}
+	public static Lists getLists() {
+		  return lists;
+		}
+    
+    
+    //Division Lists
+    public List<String> players = new ArrayList<>();
+    public boolean whitelist = false;
+}
